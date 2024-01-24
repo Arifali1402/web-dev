@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is Form Tutorial</h2>
+    <form action="backend.php">
+        <!-- for="name" and id = "name" they both must be same name -->
+        <label for="name">Name</label>
+        <!-- Avoid the use of 'br' tag -->
+        <div>
+            <input type="text" name="myName" id="name" placeholder="Eg: Sam Wilson">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole" placeholder="Eg: SDE">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name="myEmail" placeholder="Eg: xyx123@gmail.com">
+        </div>
+        <br>
+
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+
+        <label for="checkbox">Are you eligible?:</label>
+        <div>
+            <input type="checkbox" id="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+
+        <!-- Can select any one because they have the same name -->
+
+        Gender: <input type="radio" name="myGender"> Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Other
+        <div>
+        </div>
+        <br>
+
+        <div>
+            <label for="write"> Write About Yourself:</label>
+            <br> <textarea name="myText" cols="90" rows="10" id="write"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="noCar" selected>Select Your Car</option>
+                <option value="Indica">Indica</option>
+                <option value="swift">Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>

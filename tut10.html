@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDs and Classes in HTML</title>
+</head>
+
+<body>
+    <h3>IDs and Classes Tutorial</h3>
+    <!-- id means identifier, it is unique for a unique element..each element has a unique identifier-->
+    <!--CSS me class ko define karke, usme characteristics define karke element me class likh dena hai kyuki har element ke liye define karna mushkil hai.. ek element ke bohot classes ho sakta hai..-->
+    <!-- ek element ke liye sief ek hi id ho sakta hai and vo id unique hota hai and vo dusre element ke liye use nahi kar sakte hai -->
+    <!-- ek element ko multiple class de sakte hai and multiple classes ek element ko bhi de sakte hai -->
+
+    <div id="mainBox" class="redBg blackBorder">
+        this is mainBox
+    </div>
+    <span class="redBg">
+        This is span
+    </span>
+    <!-- Emmet -->
+    <!-- '.' is for class and '#' is for id -->
+
+    <span class="redBg"></span>
+    <!--span.redBg +<Tab>-->
+    <span id="mainSpan"></span>
+    <!--span#mainSpan +<Tab>-->
+    <div class="redBg blackBorder anotherClass"></div>
+    <!--span.redBg.blackBorder.anotherClass +<Tab>-->
+    <p class="redBg" id="mainPara"></p>
+    <!--p.redBg#mainPara-->
+
+    <!-- emmet takes 'div' as a default tag -->
+    <div class="blackBg"></div><!-- .blackBg+<Tab> -->
+    <div id="redBG"></div><!-- #redBg+<Tab> -->
+
+    <!-- Creating multiple elements using emmet -->
+    <!-- span.myClass.myCLass2.myClass3 + <Tab> -->
+    <!-- span.myClass.myCLass2.myClass3*4 +<Tab> to print 4 similar elements using Emmet -->
+    <span class="myClass myCLass2 myClass3">first</span>
+    <span class="myClass myCLass2 myClass3">second</span>
+    <span class="myClass myCLass2 myClass3">third</span>
+    <span class="myClass myCLass2 myClass3">fourth</span>
+</body>
+</html>

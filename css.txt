@@ -1,0 +1,44 @@
+CSS means Cascading Style Sheets
+CSS gives style to raw HTML
+It is used to give style to our web pages
+It is used to make websites responsive
+It is used to structure a website
+CSS takes responsibility of design
+It is used to handle the presentation of the web page containing HTML
+It makes our page beautiful and modern-looking
+
+SYNTAX:
+
+p{ color: blue; }
+where:  p->selector (where)
+        color->property (this)
+        blue->value (set this value)
+
+header, p.intro
+{
+    background-color : red;
+    border-radius : 3px;
+}
+
+Three ways to add CSS to the Markup:
+1. Inline CSS :- CSS is added to the elements directly using style attribute
+2. Internal CSS :- CSS is kept inside the head tags in <style> tags
+3. External CSS :- CSS is kept separately inside a .css style sheet
+    i. Write css in .css file
+   ii. Include that css file to the Markup
+
+Note:
+1. Inline CSS takes preference over Internal CSS
+2. jo last me likha hua rehta hai vo zyada preference leta hai
+3. Agar aap chahte ho ki koi CSS sabse zyada preference le, to uske saamne !important likhna padega
+
+What is CSS Selectors?
+CSS selectors are used to find the element whose property will be set
+Selectors are used to target the html elements
+Selectors makes it easy for us to easily target single/multiple HTML elements in the Markup
+
+Types of Basic Selectors: 
+1. CSS element Selector
+2. CSS ID Selector
+3. CSS Class Selector
+4. The CSS grouping Selector

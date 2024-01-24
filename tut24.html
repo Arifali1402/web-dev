@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        /* Position: static(default),relative,absolute,fixed,sticky */
+
+        /* relative: Positions the elements relative to its normal position and will leave a gap at its normal position*/
+        /* absolute: Positions the elements relative to the position of its first parent */
+        /* fixed: Positions the elements relative to the browser window */
+
+        /* Fixed: The position of the element will be positioned relative to the viewport.
+           Static: The elements will be positioned according to the normal flow of the page.
+           Relative: The element remains in the normal flow of the document but left, right, top, and bottom affects.
+           Absolute: The position of the element will be relative to the closest positioned ancestor.
+           Sticky: The element with position: sticky and top: 0 played a role between fixed & relative based on the position where it is placed. */
+           
+           /* Difference Between Fixed and Sticky:-
+           Sticky will be fixed only till the end of the container, but Fixed will be fixed until the end of the web page */
+
+        #box3 {
+            /* position: relative; */
+            /* top: 34px;
+
+            /* position: absolute; */
+            /* top: 34px;
+            /*left: 134px; */
+            /* bottom: 2px;  */
+
+            position: fixed;
+            right: 4px;
+            /* bottom: 2px;
+
+            /* position: sticky;
+            top: 3px; */
+        }
+
+        #box2 {
+            position: sticky;
+            top: 3px;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
